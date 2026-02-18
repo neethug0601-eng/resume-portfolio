@@ -1,0 +1,43 @@
+/* Responsive CSS for Portfolio */
+
+/* Base styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    .two-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    .two-columns > div {
+        flex: 48%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .two-columns > div {
+        flex: 32%;
+    }
+}
+
+/* Styles for header */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
